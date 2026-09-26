@@ -1,0 +1,34 @@
+{
+  "status": "superseded",
+  "superseded_by": [
+    "results/track_b_smoke",
+    "results/track_b_ipinyou"
+  ],
+  "superseded_reason": "Legacy floored-budget controller export; not an input to the paper or figure producer.",
+  "aggregate_budget_cents": 20259,
+  "aggregate_budget_cents_critical_bid_rule": 21348,
+  "arrivals_per_tick": 200,
+  "bid_distribution": {
+    "cents": 100,
+    "kind": "fixed"
+  },
+  "contexts_path": "data/opportunities_teacher_50k.jsonl",
+  "eligible_pair_fraction": 0.008602647876974755,
+  "mode": "pacing",
+  "n_campaigns": 36,
+  "n_contexts": 50808,
+  "n_devices": 50,
+  "oversubscription": 20.0,
+  "payment_rule": "second_score",
+  "replicates": 30,
+  "seed": 20260527,
+  "sync_intervals": [
+    1,
+    2,
+    5,
+    10,
+    25,
+    50
+  ],
+  "ticks": 100
+}

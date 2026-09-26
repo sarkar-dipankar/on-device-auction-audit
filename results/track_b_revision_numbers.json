@@ -1,0 +1,2609 @@
+{
+  "artifact_audit": {
+    "manifest_sha256": "43197b06ddde98f4399f2e6e676fcfd44d9d06b99ea7fd402f35b007fea92819",
+    "pressure_rows": 840,
+    "producer": "harness/src/bin/track_b_pressure_and_balance.rs",
+    "raw_rows": 1050,
+    "replicates_sha256": "5092164c33654f60e80315a19a04cc905274cfab1aebc44e97447e297631b048",
+    "repository_commit": "bfb693e2829619e72e2fedcfb12bfa60d40aa9a2",
+    "source_snapshot_sha256": "207a49793ebeab890dd6821deebde1138d569d8c0f55c32c7961f95597a1cebc",
+    "visible_balance_rows": 210
+  },
+  "bursty_artifact_audit": {
+    "manifest_sha256": "9d43e095d8ce6d8a99f2d83b8519c288e63ff76113fd9826ef9b39415cdb3bf6",
+    "producer": "harness/src/bin/track_b_bursty_heterogeneous.rs",
+    "raw_rows": 210,
+    "replicates_sha256": "2ac269ddb07466bf68dd43693990a1dfe822fc304191135071b81d99fd4a33b2",
+    "repository_commit": "bfb693e2829619e72e2fedcfb12bfa60d40aa9a2",
+    "source_snapshot_sha256": "207a49793ebeab890dd6821deebde1138d569d8c0f55c32c7961f95597a1cebc"
+  },
+  "bursty_heterogeneous_demand": {
+    "arrival_process": {
+      "conditional_independence": "device counts are independent Poisson draws conditional on the shared state",
+      "expected_high_state_duration_ticks": 4.545454545454546,
+      "expected_low_state_duration_ticks": 12.5,
+      "family": "two-state stationary Markov-modulated heterogeneous-device Poisson",
+      "high_demand_devices": 10,
+      "high_device_weight": 2.5,
+      "high_multiplier": 3.0625,
+      "high_to_low_probability_per_tick": 0.22,
+      "initial_state": "drawn from stationary distribution",
+      "low_demand_devices": 40,
+      "low_device_weight": 0.625,
+      "low_multiplier": 0.25,
+      "low_to_high_probability_per_tick": 0.08,
+      "mean_device_weight": 1.0,
+      "state_scope": "one shared aggregate state per tick",
+      "stationary_aggregate_multiplier_mean": 1.0,
+      "stationary_high_probability": 0.26666666666666666
+    },
+    "budget_policy": "reuse the primary homogeneous experiment's pressure-20 vector frozen from disjoint pilot seeds; no robustness-arm recalibration",
+    "cells": {
+      "0": {
+        "auctions_run": {
+          "ci95_halfwidth": 20161.339093213337,
+          "ci95_high": 299871.40575987997,
+          "ci95_low": 259548.7275734533,
+          "ci95_method": "two-sided Student-t",
+          "max": 413087.0,
+          "mean": 279710.06666666665,
+          "min": 175866.0,
+          "n": 30,
+          "sd": 53993.0577152626
+        },
+        "auctions_won": {
+          "ci95_halfwidth": 4217.25456744774,
+          "ci95_high": 18852.85456744774,
+          "ci95_low": 10418.345432552262,
+          "ci95_method": "two-sided Student-t",
+          "max": 31589.0,
+          "mean": 14635.6,
+          "min": 1798.0,
+          "n": 30,
+          "sd": 11294.015154817236
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 10.874638839240243,
+          "ci95_high": 38.6001766316096,
+          "ci95_low": 16.850898953129118,
+          "ci95_method": "two-sided Student-t",
+          "max": 76.05561735261402,
+          "mean": 27.72553779236936,
+          "min": 3.731756620173843,
+          "n": 30,
+          "sd": 29.122817674217952
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 0.1242324332155656,
+          "ci95_high": 0.6103097035040617,
+          "ci95_low": 0.36184483707293047,
+          "ci95_method": "two-sided Student-t",
+          "max": 1.1075178310370797,
+          "mean": 0.48607727028849607,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.3327005664506415
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 2.984974462686351,
+          "ci95_high": 9.684226765092864,
+          "ci95_low": 3.714277839720163,
+          "ci95_method": "two-sided Student-t",
+          "max": 23.29700674847532,
+          "mean": 6.699252302406514,
+          "min": 0.0,
+          "n": 30,
+          "sd": 7.993908425292101
+        }
+      },
+      "1": {
+        "auctions_run": {
+          "ci95_halfwidth": 20161.339093213337,
+          "ci95_high": 299871.40575987997,
+          "ci95_low": 259548.7275734533,
+          "ci95_method": "two-sided Student-t",
+          "max": 413087.0,
+          "mean": 279710.06666666665,
+          "min": 175866.0,
+          "n": 30,
+          "sd": 53993.0577152626
+        },
+        "auctions_won": {
+          "ci95_halfwidth": 4114.481756765069,
+          "ci95_high": 19082.315090098404,
+          "ci95_low": 10853.351576568264,
+          "ci95_method": "two-sided Student-t",
+          "max": 31825.0,
+          "mean": 14967.833333333334,
+          "min": 2465.0,
+          "n": 30,
+          "sd": 11018.784512988634
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 12.51905616832123,
+          "ci95_high": 45.34690659272875,
+          "ci95_low": 20.308794256086294,
+          "ci95_method": "two-sided Student-t",
+          "max": 84.94301899366877,
+          "mean": 32.82785042440752,
+          "min": 3.826617062030352,
+          "n": 30,
+          "sd": 33.5266481611986
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 11.61006286897345,
+          "ci95_high": 51.13245195721555,
+          "ci95_low": 27.91232621926865,
+          "ci95_method": "two-sided Student-t",
+          "max": 91.43298040431785,
+          "mean": 39.5223890882421,
+          "min": 0.02067366617935882,
+          "n": 30,
+          "sd": 31.09231939724301
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 2.9563157882550097,
+          "ci95_high": 9.233185401411337,
+          "ci95_low": 3.3205538249013173,
+          "ci95_method": "two-sided Student-t",
+          "max": 23.33097062862712,
+          "mean": 6.276869613156327,
+          "min": 0.0,
+          "n": 30,
+          "sd": 7.917159085604879
+        }
+      },
+      "10": {
+        "auctions_run": {
+          "ci95_halfwidth": 20161.339093213337,
+          "ci95_high": 299871.40575987997,
+          "ci95_low": 259548.7275734533,
+          "ci95_method": "two-sided Student-t",
+          "max": 413087.0,
+          "mean": 279710.06666666665,
+          "min": 175866.0,
+          "n": 30,
+          "sd": 53993.0577152626
+        },
+        "auctions_won": {
+          "ci95_halfwidth": 1592.6201580487689,
+          "ci95_high": 9434.153491382103,
+          "ci95_low": 6248.913175284565,
+          "ci95_method": "two-sided Student-t",
+          "max": 19387.0,
+          "mean": 7841.533333333334,
+          "min": 2459.0,
+          "n": 30,
+          "sd": 4265.1151153428955
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 1.8758121763832987,
+          "ci95_high": 84.51486387085853,
+          "ci95_low": 80.76323951809195,
+          "ci95_method": "two-sided Student-t",
+          "max": 95.29819770617149,
+          "mean": 82.63905169447524,
+          "min": 74.51215559157212,
+          "n": 30,
+          "sd": 5.023517269076076
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 101.54084794776156,
+          "ci95_high": 483.46979944832515,
+          "ci95_low": 280.388103552802,
+          "ci95_method": "two-sided Student-t",
+          "max": 1140.6510728156056,
+          "mean": 381.9289515005636,
+          "min": 50.496167988304606,
+          "n": 30,
+          "sd": 271.9313850311511
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.0,
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "two-sided Student-t",
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.0
+        }
+      },
+      "2": {
+        "auctions_run": {
+          "ci95_halfwidth": 20161.339093213337,
+          "ci95_high": 299871.40575987997,
+          "ci95_low": 259548.7275734533,
+          "ci95_method": "two-sided Student-t",
+          "max": 413087.0,
+          "mean": 279710.06666666665,
+          "min": 175866.0,
+          "n": 30,
+          "sd": 53993.0577152626
+        },
+        "auctions_won": {
+          "ci95_halfwidth": 2841.027332905714,
+          "ci95_high": 13367.327332905714,
+          "ci95_low": 7685.272667094285,
+          "ci95_method": "two-sided Student-t",
+          "max": 26634.0,
+          "mean": 10526.3,
+          "min": 2693.0,
+          "n": 30,
+          "sd": 7608.410931784412
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 11.42831620026366,
+          "ci95_high": 57.81884382673418,
+          "ci95_low": 34.96221142620686,
+          "ci95_method": "two-sided Student-t",
+          "max": 85.70031099802092,
+          "mean": 46.39052762647052,
+          "min": 6.43638839598894,
+          "n": 30,
+          "sd": 30.605592879334896
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 29.63246890776941,
+          "ci95_high": 148.46489899878276,
+          "ci95_low": 89.19996118324394,
+          "ci95_method": "two-sided Student-t",
+          "max": 265.5768691209262,
+          "mean": 118.83243009101335,
+          "min": 20.676619560241587,
+          "n": 30,
+          "sd": 79.35720919060823
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.8254591820531,
+          "ci95_high": 1.7934543778868641,
+          "ci95_low": 0.14253601378066405,
+          "ci95_method": "two-sided Student-t",
+          "max": 9.661247212746792,
+          "mean": 0.967995195833764,
+          "min": 0.0,
+          "n": 30,
+          "sd": 2.210620289263882
+        }
+      },
+      "25": {
+        "auctions_run": {
+          "ci95_halfwidth": 20161.339093213337,
+          "ci95_high": 299871.40575987997,
+          "ci95_low": 259548.7275734533,
+          "ci95_method": "two-sided Student-t",
+          "max": 413087.0,
+          "mean": 279710.06666666665,
+          "min": 175866.0,
+          "n": 30,
+          "sd": 53993.0577152626
+        },
+        "auctions_won": {
+          "ci95_halfwidth": 1807.2393877547588,
+          "ci95_high": 21019.93938775476,
+          "ci95_low": 17405.460612245242,
+          "ci95_method": "two-sided Student-t",
+          "max": 27040.0,
+          "mean": 19212.7,
+          "min": 7590.0,
+          "n": 30,
+          "sd": 4839.875968416461
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 1.6558336228083246,
+          "ci95_high": 86.18444645592166,
+          "ci95_low": 82.872779210305,
+          "ci95_method": "two-sided Student-t",
+          "max": 90.70155359664929,
+          "mean": 84.52861283311333,
+          "min": 72.03558977338757,
+          "n": 30,
+          "sd": 4.434403883086171
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 114.47953276820128,
+          "ci95_high": 1212.6089105400724,
+          "ci95_low": 983.6498450036698,
+          "ci95_method": "two-sided Student-t",
+          "max": 1602.4099588003367,
+          "mean": 1098.129377771871,
+          "min": 376.36999955699287,
+          "n": 30,
+          "sd": 306.5818193619121
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.0,
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "two-sided Student-t",
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.0
+        }
+      },
+      "5": {
+        "auctions_run": {
+          "ci95_halfwidth": 20161.339093213337,
+          "ci95_high": 299871.40575987997,
+          "ci95_low": 259548.7275734533,
+          "ci95_method": "two-sided Student-t",
+          "max": 413087.0,
+          "mean": 279710.06666666665,
+          "min": 175866.0,
+          "n": 30,
+          "sd": 53993.0577152626
+        },
+        "auctions_won": {
+          "ci95_halfwidth": 845.9963473953952,
+          "ci95_high": 7569.029680728729,
+          "ci95_low": 5877.036985937939,
+          "ci95_method": "two-sided Student-t",
+          "max": 12500.0,
+          "mean": 6723.033333333334,
+          "min": 3259.0,
+          "n": 30,
+          "sd": 2265.61982815898
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 4.986770038989363,
+          "ci95_high": 72.5824368266127,
+          "ci95_low": 62.60889674863398,
+          "ci95_method": "two-sided Student-t",
+          "max": 87.97444158075601,
+          "mean": 67.59566678762334,
+          "min": 42.707963429177155,
+          "n": 30,
+          "sd": 13.354815435772798
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 59.08944327573862,
+          "ci95_high": 300.9039020440803,
+          "ci95_low": 182.72501549260312,
+          "ci95_method": "two-sided Student-t",
+          "max": 656.3091599108079,
+          "mean": 241.81445876834172,
+          "min": 76.00082694664717,
+          "n": 30,
+          "sd": 158.2444353720355
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.0,
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "two-sided Student-t",
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.0
+        }
+      },
+      "50": {
+        "auctions_run": {
+          "ci95_halfwidth": 20161.339093213337,
+          "ci95_high": 299871.40575987997,
+          "ci95_low": 259548.7275734533,
+          "ci95_method": "two-sided Student-t",
+          "max": 413087.0,
+          "mean": 279710.06666666665,
+          "min": 175866.0,
+          "n": 30,
+          "sd": 53993.0577152626
+        },
+        "auctions_won": {
+          "ci95_halfwidth": 1451.2485728970312,
+          "ci95_high": 28137.015239563698,
+          "ci95_low": 25234.518093769635,
+          "ci95_method": "two-sided Student-t",
+          "max": 34316.0,
+          "mean": 26685.766666666666,
+          "min": 18230.0,
+          "n": 30,
+          "sd": 3886.5150570280503
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 2.797645860375924,
+          "ci95_high": 87.1256591429844,
+          "ci95_low": 81.53036742223256,
+          "ci95_method": "two-sided Student-t",
+          "max": 93.18222093107705,
+          "mean": 84.32801328260848,
+          "min": 71.0782775644542,
+          "n": 30,
+          "sd": 7.492233214657356
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 120.01015748670348,
+          "ci95_high": 1693.185214216228,
+          "ci95_low": 1453.1648992428209,
+          "ci95_method": "two-sided Student-t",
+          "max": 2138.193121575924,
+          "mean": 1573.1750567295244,
+          "min": 878.9158138779367,
+          "n": 30,
+          "sd": 321.39310437859365
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 2.4505188356379124,
+          "ci95_high": 4.960720305437132,
+          "ci95_low": 0.05968263416130659,
+          "ci95_method": "two-sided Student-t",
+          "max": 22.199825750527914,
+          "mean": 2.510201469799219,
+          "min": 0.0,
+          "n": 30,
+          "sd": 6.562609969169862
+        }
+      }
+    },
+    "estimand": "pool overspend percent in dimensionless score-unit accounting",
+    "mean_curve_strictly_increasing": true,
+    "paired_lag_minus_zero_overspend_pp": {
+      "0": {
+        "ci95_halfwidth": 0.0,
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "ci95_method": "two-sided Student-t",
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0,
+        "n": 30,
+        "sd": 0.0
+      },
+      "1": {
+        "ci95_halfwidth": 11.502385033141898,
+        "ci95_high": 50.5386968510955,
+        "ci95_low": 27.533926784811705,
+        "ci95_method": "two-sided Student-t",
+        "max": 90.8710996913717,
+        "mean": 39.0363118179536,
+        "min": 0.02067366617935882,
+        "n": 30,
+        "sd": 30.803952856814917
+      },
+      "10": {
+        "ci95_halfwidth": 101.45867791703138,
+        "ci95_high": 482.90155214730646,
+        "ci95_low": 279.98419631324373,
+        "ci95_method": "two-sided Student-t",
+        "max": 1140.0891921026596,
+        "mean": 381.4428742302751,
+        "min": 50.47032590558041,
+        "n": 30,
+        "sd": 271.71132964737086
+      },
+      "2": {
+        "ci95_halfwidth": 29.544841084917298,
+        "ci95_high": 147.89119390564215,
+        "ci95_low": 88.80151173580757,
+        "ci95_method": "two-sided Student-t",
+        "max": 264.7093134866138,
+        "mean": 118.34635282072486,
+        "min": 20.675881215020894,
+        "n": 30,
+        "sd": 79.1225375710872
+      },
+      "25": {
+        "ci95_halfwidth": 114.44915245368522,
+        "ci95_high": 1212.0924529552676,
+        "ci95_low": 983.1941480478972,
+        "ci95_method": "two-sided Student-t",
+        "max": 1601.8931171458528,
+        "mean": 1097.6433005015824,
+        "min": 376.31831539154444,
+        "n": 30,
+        "sd": 306.5004593854001
+      },
+      "5": {
+        "ci95_halfwidth": 59.001097217835394,
+        "ci95_high": 300.3294787158886,
+        "ci95_low": 182.32728428021784,
+        "ci95_method": "two-sided Student-t",
+        "max": 655.4748298114266,
+        "mean": 241.32838149805323,
+        "min": 75.75200460727417,
+        "n": 30,
+        "sd": 158.00784028372163
+      },
+      "50": {
+        "ci95_halfwidth": 119.95326808997966,
+        "ci95_high": 1692.6422475492157,
+        "ci95_low": 1452.7357113692563,
+        "ci95_method": "two-sided Student-t",
+        "max": 2137.392017011474,
+        "mean": 1572.688979459236,
+        "min": 878.6669915385637,
+        "n": 30,
+        "sd": 321.2407517760957
+      }
+    },
+    "replicate_curves_strictly_increasing": 24,
+    "replicates": 30
+  },
+  "pressure_sensitivity": {
+    "cells": {
+      "10": {
+        "0": {
+          "auctions_won": {
+            "ci95_halfwidth": 67.77150940528604,
+            "ci95_high": 31040.17150940529,
+            "ci95_low": 30904.628490594714,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30972.4,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 181.49543548929344
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.0322425322995022,
+            "ci95_high": 6.732296701707173,
+            "ci95_low": 6.667811637108168,
+            "ci95_method": "two-sided Student-t",
+            "max": 6.894772638942868,
+            "mean": 6.700054169407671,
+            "min": 6.532838709677419,
+            "n": 30,
+            "sd": 0.08634708732810557
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 270876.0,
+            "ci95_low": 270876.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 270876.0,
+            "mean": 270876.0,
+            "min": 270876.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.39364832356005486,
+            "ci95_high": 23.78454797259996,
+            "ci95_low": 22.99725132547985,
+            "ci95_method": "two-sided Student-t",
+            "max": 25.235901298010898,
+            "mean": 23.390899649039905,
+            "min": 21.409427191777787,
+            "n": 30,
+            "sd": 1.0542095718557194
+          }
+        },
+        "1": {
+          "auctions_won": {
+            "ci95_halfwidth": 67.77150940528604,
+            "ci95_high": 31040.17150940529,
+            "ci95_low": 30904.628490594714,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30972.4,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 181.49543548929344
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.0322425322995022,
+            "ci95_high": 6.732296701707173,
+            "ci95_low": 6.667811637108168,
+            "ci95_method": "two-sided Student-t",
+            "max": 6.894772638942868,
+            "mean": 6.700054169407671,
+            "min": 6.532838709677419,
+            "n": 30,
+            "sd": 0.08634708732810557
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 270876.0,
+            "ci95_low": 270876.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 270876.0,
+            "mean": 270876.0,
+            "min": 270876.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.000384373197595084,
+            "ci95_high": 0.0008027688226535364,
+            "ci95_low": 3.402242746336834e-05,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.004060898713802626,
+            "mean": 0.0004183956250584523,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0010293703283298973
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.3937361564920904,
+            "ci95_high": 23.785054201157052,
+            "ci95_low": 22.997581888172874,
+            "ci95_method": "two-sided Student-t",
+            "max": 25.235901298010898,
+            "mean": 23.391318044664963,
+            "min": 21.409427191777787,
+            "n": 30,
+            "sd": 1.0544447927677216
+          }
+        },
+        "10": {
+          "auctions_won": {
+            "ci95_halfwidth": 38.65163724139783,
+            "ci95_high": 9339.051637241397,
+            "ci95_low": 9261.748362758603,
+            "ci95_method": "two-sided Student-t",
+            "max": 9519.0,
+            "mean": 9300.4,
+            "min": 9126.0,
+            "n": 30,
+            "sd": 103.51098559056925
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.08651286293194262,
+            "ci95_high": 84.44407996324655,
+            "ci95_low": 84.27105423738267,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.76729222520107,
+            "mean": 84.35756710031461,
+            "min": 83.98582333696838,
+            "n": 30,
+            "sd": 0.23168570201615987
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 270876.0,
+            "ci95_low": 270876.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 270876.0,
+            "mean": 270876.0,
+            "min": 270876.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.2671616099691982,
+            "ci95_high": 190.90574162444076,
+            "ci95_low": 188.37141840450235,
+            "ci95_method": "two-sided Student-t",
+            "max": 197.63138853202202,
+            "mean": 189.63858001447156,
+            "min": 182.9881569426601,
+            "n": 30,
+            "sd": 3.3935211160980217
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "2": {
+          "auctions_won": {
+            "ci95_halfwidth": 1122.2907922577024,
+            "ci95_high": 27180.65745892437,
+            "ci95_low": 24936.07587440896,
+            "ci95_method": "two-sided Student-t",
+            "max": 29311.0,
+            "mean": 26058.366666666665,
+            "min": 17059.0,
+            "n": 30,
+            "sd": 3005.5499408804435
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.7593324624820623,
+            "ci95_high": 11.928882306801839,
+            "ci95_low": 10.410217381837715,
+            "ci95_method": "two-sided Student-t",
+            "max": 17.753268069640658,
+            "mean": 11.169549844319777,
+            "min": 9.411586093957899,
+            "n": 30,
+            "sd": 2.033529681848729
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 270876.0,
+            "ci95_low": 270876.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 270876.0,
+            "mean": 270876.0,
+            "min": 270876.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.2426857021987556,
+            "ci95_high": 9.65486199934825,
+            "ci95_low": 7.169490594950739,
+            "ci95_method": "two-sided Student-t",
+            "max": 15.752595283450729,
+            "mean": 8.412176297149495,
+            "min": 4.097815974837195,
+            "n": 30,
+            "sd": 3.3279734312556095
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.5236454358359466,
+            "ci95_high": 3.6188993527573423,
+            "ci95_low": 2.571608481085449,
+            "ci95_method": "two-sided Student-t",
+            "max": 6.33721702919417,
+            "mean": 3.0952539169213957,
+            "min": 0.7641873034155849,
+            "n": 30,
+            "sd": 1.4023482323622725
+          }
+        },
+        "25": {
+          "auctions_won": {
+            "ci95_halfwidth": 58.416620343762865,
+            "ci95_high": 23302.249953677096,
+            "ci95_low": 23185.41671298957,
+            "ci95_method": "two-sided Student-t",
+            "max": 23692.0,
+            "mean": 23243.833333333332,
+            "min": 22998.0,
+            "n": 30,
+            "sd": 156.4425824678032
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.05103814181465026,
+            "ci95_high": 84.34322461840986,
+            "ci95_low": 84.24114833478058,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.57781699233881,
+            "mean": 84.29218647659522,
+            "min": 83.92114354810847,
+            "n": 30,
+            "sd": 0.13668265406070115
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 270876.0,
+            "ci95_low": 270876.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 270876.0,
+            "mean": 270876.0,
+            "min": 270876.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.8717427151676251,
+            "ci95_high": 625.181904314325,
+            "ci95_low": 621.4384188839897,
+            "ci95_method": "two-sided Student-t",
+            "max": 636.3059111918369,
+            "mean": 623.3101615991574,
+            "min": 616.346594013497,
+            "n": 30,
+            "sd": 5.01261905178644
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "5": {
+          "auctions_won": {
+            "ci95_halfwidth": 64.38249807393176,
+            "ci95_high": 5022.382498073932,
+            "ci95_low": 4893.617501926068,
+            "ci95_method": "two-sided Student-t",
+            "max": 5307.0,
+            "mean": 4958.0,
+            "min": 4708.0,
+            "n": 30,
+            "sd": 172.41949645739223
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.78590220893136,
+            "ci95_high": 81.56737192880071,
+            "ci95_low": 79.99556751093799,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.5064155629139,
+            "mean": 80.78146971986935,
+            "min": 77.61805162992275,
+            "n": 30,
+            "sd": 2.1046847696573425
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 270876.0,
+            "ci95_low": 270876.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 270876.0,
+            "mean": 270876.0,
+            "min": 270876.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.131398237754988,
+            "ci95_high": 48.88622578492294,
+            "ci95_low": 46.62342930941297,
+            "ci95_method": "two-sided Student-t",
+            "max": 54.847236373838946,
+            "mean": 47.754827547167956,
+            "min": 41.69989220159778,
+            "n": 30,
+            "sd": 3.029940127866539
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "50": {
+          "auctions_won": {
+            "ci95_halfwidth": 67.77150940528604,
+            "ci95_high": 31040.17150940529,
+            "ci95_low": 30904.628490594714,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30972.4,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 181.49543548929344
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.04365765343305753,
+            "ci95_high": 75.96315780319873,
+            "ci95_low": 75.87584249633261,
+            "ci95_method": "two-sided Student-t",
+            "max": 76.16192085711553,
+            "mean": 75.91950014976567,
+            "min": 75.67215930779997,
+            "n": 30,
+            "sd": 0.11691734316980396
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 270876.0,
+            "ci95_low": 270876.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 270876.0,
+            "mean": 270876.0,
+            "min": 270876.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.9457726041474135,
+            "ci95_high": 803.3546706485171,
+            "ci95_low": 799.4631254402221,
+            "ci95_method": "two-sided Student-t",
+            "max": 815.1072815605664,
+            "mean": 801.4088980443696,
+            "min": 793.7517535698992,
+            "n": 30,
+            "sd": 5.210874735590979
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 33.33333333333333,
+            "ci95_low": 33.33333333333333,
+            "ci95_method": "two-sided Student-t",
+            "max": 33.33333333333333,
+            "mean": 33.33333333333333,
+            "min": 33.33333333333333,
+            "n": 30,
+            "sd": 0.0
+          }
+        }
+      },
+      "2": {
+        "0": {
+          "auctions_won": {
+            "ci95_halfwidth": 81.97249999554447,
+            "ci95_high": 30756.572499995542,
+            "ci95_low": 30592.627500004455,
+            "ci95_method": "two-sided Student-t",
+            "max": 31199.0,
+            "mean": 30674.6,
+            "min": 30189.0,
+            "n": 30,
+            "sd": 219.52638675739786
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.1635006377003221,
+            "ci95_high": 43.88748705692338,
+            "ci95_low": 43.560485781522736,
+            "ci95_method": "two-sided Student-t",
+            "max": 44.6009804895823,
+            "mean": 43.72398641922306,
+            "min": 42.95284489477786,
+            "n": 30,
+            "sd": 0.4378627494444235
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 1354374.0,
+            "ci95_low": 1354374.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 1354374.0,
+            "mean": 1354374.0,
+            "min": 1354374.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.003769327205055363,
+            "ci95_high": 0.06794657809734951,
+            "ci95_low": 0.06040792368723878,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.08934016748697184,
+            "mean": 0.06417725089229415,
+            "min": 0.04777114740832296,
+            "n": 30,
+            "sd": 0.010094443647285874
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.24364227716722495,
+            "ci95_high": 1.2844823011684732,
+            "ci95_low": 0.7971977468340233,
+            "ci95_method": "two-sided Student-t",
+            "max": 2.6319908681058557,
+            "mean": 1.0408400240012483,
+            "min": 0.299695652751751,
+            "n": 30,
+            "sd": 0.6524860016563179
+          }
+        },
+        "1": {
+          "auctions_won": {
+            "ci95_halfwidth": 72.63442615709714,
+            "ci95_high": 30919.734426157094,
+            "ci95_low": 30774.465573842903,
+            "ci95_method": "two-sided Student-t",
+            "max": 31361.0,
+            "mean": 30847.1,
+            "min": 30536.0,
+            "n": 30,
+            "sd": 194.51856573035155
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.18929560087233238,
+            "ci95_high": 44.05140281878339,
+            "ci95_low": 43.67281161703872,
+            "ci95_method": "two-sided Student-t",
+            "max": 44.89520565889442,
+            "mean": 43.86210721791105,
+            "min": 42.99896396542235,
+            "n": 30,
+            "sd": 0.5069429295292001
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 1354374.0,
+            "ci95_low": 1354374.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 1354374.0,
+            "mean": 1354374.0,
+            "min": 1354374.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.14510907587722496,
+            "ci95_high": 1.590859412687195,
+            "ci95_low": 1.3006412609327453,
+            "ci95_method": "two-sided Student-t",
+            "max": 2.135599177184441,
+            "mean": 1.4457503368099702,
+            "min": 0.7648552024773069,
+            "n": 30,
+            "sd": 0.38860924230398897
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.2625645698821242,
+            "ci95_high": 1.8118781272894577,
+            "ci95_low": 1.2867489875252094,
+            "ci95_method": "two-sided Student-t",
+            "max": 2.8590330292814246,
+            "mean": 1.5493135574073336,
+            "min": 0.5441628383297376,
+            "n": 30,
+            "sd": 0.703160832228686
+          }
+        },
+        "10": {
+          "auctions_won": {
+            "ci95_halfwidth": 285.9294490341632,
+            "ci95_high": 24420.462782367496,
+            "ci95_low": 23848.60388429917,
+            "ci95_method": "two-sided Student-t",
+            "max": 25303.0,
+            "mean": 24134.533333333333,
+            "min": 22739.0,
+            "n": 30,
+            "sd": 765.7331277857226
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.8071967246576542,
+            "ci95_high": 68.97232041366017,
+            "ci95_low": 67.35792696434486,
+            "ci95_method": "two-sided Student-t",
+            "max": 72.49997823152945,
+            "mean": 68.16512368900251,
+            "min": 63.54203058925819,
+            "n": 30,
+            "sd": 2.161712530130624
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 1354374.0,
+            "ci95_low": 1354374.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 1354374.0,
+            "mean": 1354374.0,
+            "min": 1354374.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.0757059273234622,
+            "ci95_high": 22.496037386728325,
+            "ci95_low": 20.344625532081402,
+            "ci95_method": "two-sided Student-t",
+            "max": 26.003821691792666,
+            "mean": 21.420331459404863,
+            "min": 16.290847284428082,
+            "n": 30,
+            "sd": 2.8807933813372917
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.018006360648187624,
+            "ci95_high": 0.05517728487837319,
+            "ci95_low": 0.019164563581997935,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.21928950201347636,
+            "mean": 0.03717092423018556,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.04822191944813296
+          }
+        },
+        "2": {
+          "auctions_won": {
+            "ci95_halfwidth": 67.77150940528604,
+            "ci95_high": 31040.17150940529,
+            "ci95_low": 30904.628490594714,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30972.4,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 181.49543548929344
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.1735579662860763,
+            "ci95_high": 38.87619727475252,
+            "ci95_low": 38.52908134218037,
+            "ci95_method": "two-sided Student-t",
+            "max": 39.70460071977434,
+            "mean": 38.702639308466445,
+            "min": 37.81046803579476,
+            "n": 30,
+            "sd": 0.4647967700608804
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 1354374.0,
+            "ci95_low": 1354374.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 1354374.0,
+            "mean": 1354374.0,
+            "min": 1354374.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.11561309003229028,
+            "ci95_high": 0.7871336596829185,
+            "ci95_low": 0.555907479618338,
+            "ci95_method": "two-sided Student-t",
+            "max": 1.3245233591312295,
+            "mean": 0.6715205696506282,
+            "min": 0.22357192326491795,
+            "n": 30,
+            "sd": 0.3096175414684916
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.24943028410721307,
+            "ci95_high": 12.418796598975435,
+            "ci95_low": 11.91993603076101,
+            "ci95_method": "two-sided Student-t",
+            "max": 14.038367541018951,
+            "mean": 12.169366314868222,
+            "min": 10.905702560740238,
+            "n": 30,
+            "sd": 0.6679865689213323
+          }
+        },
+        "25": {
+          "auctions_won": {
+            "ci95_halfwidth": 64.49067148252831,
+            "ci95_high": 23350.957338149194,
+            "ci95_low": 23221.97599518414,
+            "ci95_method": "two-sided Student-t",
+            "max": 23766.0,
+            "mean": 23286.466666666667,
+            "min": 23069.0,
+            "n": 30,
+            "sd": 172.70919016605947
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.07194222657555384,
+            "ci95_high": 84.3098141028581,
+            "ci95_low": 84.16592964970698,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.57781699233881,
+            "mean": 84.23787187628254,
+            "min": 83.7370673219506,
+            "n": 30,
+            "sd": 0.19266482120554823
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 1354374.0,
+            "ci95_low": 1354374.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 1354374.0,
+            "mean": 1354374.0,
+            "min": 1354374.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.3951418649137418,
+            "ci95_high": 45.229276798592814,
+            "ci95_low": 44.438993068765335,
+            "ci95_method": "two-sided Student-t",
+            "max": 48.07697135355522,
+            "mean": 44.834134933679074,
+            "min": 43.4816380113617,
+            "n": 30,
+            "sd": 1.0582093490598483
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "5": {
+          "auctions_won": {
+            "ci95_halfwidth": 69.5127691975708,
+            "ci95_high": 31014.246102530906,
+            "ci95_low": 30875.22056413576,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30944.733333333334,
+            "min": 30630.0,
+            "n": 30,
+            "sd": 186.15861485587357
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.29637339992684986,
+            "ci95_high": 41.51294472780457,
+            "ci95_low": 40.92019792795087,
+            "ci95_method": "two-sided Student-t",
+            "max": 43.03742452129549,
+            "mean": 41.21657132787772,
+            "min": 39.634159638264435,
+            "n": 30,
+            "sd": 0.7937025419559359
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 1354374.0,
+            "ci95_low": 1354374.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 1354374.0,
+            "mean": 1354374.0,
+            "min": 1354374.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.24563107464691883,
+            "ci95_high": 2.4823520000830737,
+            "ci95_low": 1.991089850789236,
+            "ci95_method": "two-sided Student-t",
+            "max": 3.7540590708327244,
+            "mean": 2.236720925436155,
+            "min": 1.0277072654968273,
+            "n": 30,
+            "sd": 0.6578120991247756
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.5457789642825209,
+            "ci95_high": 8.616521117730041,
+            "ci95_low": 7.524963189165,
+            "ci95_method": "two-sided Student-t",
+            "max": 10.635540847653601,
+            "mean": 8.07074215344752,
+            "min": 3.836532597347557,
+            "n": 30,
+            "sd": 1.4616229101668123
+          }
+        },
+        "50": {
+          "auctions_won": {
+            "ci95_halfwidth": 67.77150940528604,
+            "ci95_high": 31040.17150940529,
+            "ci95_low": 30904.628490594714,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30972.4,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 181.49543548929344
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.04365765343305753,
+            "ci95_high": 75.96315780319873,
+            "ci95_low": 75.87584249633261,
+            "ci95_method": "two-sided Student-t",
+            "max": 76.16192085711553,
+            "mean": 75.91950014976567,
+            "min": 75.67215930779997,
+            "n": 30,
+            "sd": 0.11691734316980396
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 1354374.0,
+            "ci95_low": 1354374.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 1354374.0,
+            "mean": 1354374.0,
+            "min": 1354374.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.38915624481940486,
+            "ci95_high": 107.33837165110059,
+            "ci95_low": 106.56005916146178,
+            "ci95_method": "two-sided Student-t",
+            "max": 109.68890424653752,
+            "mean": 106.94921540628118,
+            "min": 105.4177797270178,
+            "n": 30,
+            "sd": 1.0421795640480007
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 33.33333333333333,
+            "ci95_low": 33.33333333333333,
+            "ci95_method": "two-sided Student-t",
+            "max": 33.33333333333333,
+            "mean": 33.33333333333333,
+            "min": 33.33333333333333,
+            "n": 30,
+            "sd": 0.0
+          }
+        }
+      },
+      "20": {
+        "0": {
+          "auctions_won": {
+            "ci95_halfwidth": 646.3816689644261,
+            "ci95_high": 20004.448335631092,
+            "ci95_low": 18711.68499770224,
+            "ci95_method": "two-sided Student-t",
+            "max": 22219.0,
+            "mean": 19358.066666666666,
+            "min": 15257.0,
+            "n": 30,
+            "sd": 1731.0419013899739
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.2528748603980409,
+            "ci95_high": 7.319503998061718,
+            "ci95_low": 6.813754277265636,
+            "ci95_method": "two-sided Student-t",
+            "max": 8.920364422887856,
+            "mean": 7.066629137663677,
+            "min": 6.1092308384715786,
+            "n": 30,
+            "sd": 0.6772113136476338
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 135438.0,
+            "ci95_low": 135438.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 135438.0,
+            "mean": 135438.0,
+            "min": 135438.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.03465547185272565,
+            "ci95_high": 0.5623015780661468,
+            "ci95_low": 0.49299063436069546,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.7302234232637812,
+            "mean": 0.5276461062134211,
+            "min": 0.3536673607111741,
+            "n": 30,
+            "sd": 0.09280905813065454
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.163041194786322,
+            "ci95_high": 0.5172253971519801,
+            "ci95_low": 0.1911430075793361,
+            "ci95_method": "two-sided Student-t",
+            "max": 1.3039176597409885,
+            "mean": 0.3541842023656581,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.43663233872330104
+          }
+        },
+        "1": {
+          "auctions_won": {
+            "ci95_halfwidth": 595.1807815854041,
+            "ci95_high": 20673.81411491874,
+            "ci95_low": 19483.45255174793,
+            "ci95_method": "two-sided Student-t",
+            "max": 22985.0,
+            "mean": 20078.633333333335,
+            "min": 17300.0,
+            "n": 30,
+            "sd": 1593.92340670334
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.25646919451912126,
+            "ci95_high": 8.225683111858833,
+            "ci95_low": 7.712744722820592,
+            "ci95_method": "two-sided Student-t",
+            "max": 9.180867052023121,
+            "mean": 7.9692139173397125,
+            "min": 6.7907832875011085,
+            "n": 30,
+            "sd": 0.6868371172091023
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 135438.0,
+            "ci95_low": 135438.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 135438.0,
+            "mean": 135438.0,
+            "min": 135438.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.8702368912185291,
+            "ci95_high": 18.64328925958388,
+            "ci95_low": 16.902815477146824,
+            "ci95_method": "two-sided Student-t",
+            "max": 21.12627179964264,
+            "mean": 17.773052368365352,
+            "min": 10.571626869859271,
+            "n": 30,
+            "sd": 2.330537196774262
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.1703554249254744,
+            "ci95_high": 0.5583312268914415,
+            "ci95_low": 0.2176203770404928,
+            "ci95_method": "two-sided Student-t",
+            "max": 1.3851356340170409,
+            "mean": 0.3879758019659672,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.45622020678207015
+          }
+        },
+        "10": {
+          "auctions_won": {
+            "ci95_halfwidth": 38.65163724139783,
+            "ci95_high": 9339.051637241397,
+            "ci95_low": 9261.748362758603,
+            "ci95_method": "two-sided Student-t",
+            "max": 9519.0,
+            "mean": 9300.4,
+            "min": 9126.0,
+            "n": 30,
+            "sd": 103.51098559056925
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.08651286293194262,
+            "ci95_high": 84.44407996324655,
+            "ci95_low": 84.27105423738267,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.76729222520107,
+            "mean": 84.35756710031461,
+            "min": 83.98582333696838,
+            "n": 30,
+            "sd": 0.23168570201615987
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 135438.0,
+            "ci95_low": 135438.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 135438.0,
+            "mean": 135438.0,
+            "min": 135438.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 2.534323219938398,
+            "ci95_high": 481.81148324888153,
+            "ci95_low": 476.7428368090047,
+            "ci95_method": "two-sided Student-t",
+            "max": 495.2627770640441,
+            "mean": 479.2771600289431,
+            "min": 465.9763138853203,
+            "n": 30,
+            "sd": 6.787042232196047
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "2": {
+          "auctions_won": {
+            "ci95_halfwidth": 65.56680049976381,
+            "ci95_high": 3170.200133833097,
+            "ci95_low": 3039.0665328335695,
+            "ci95_method": "two-sided Student-t",
+            "max": 3554.0,
+            "mean": 3104.633333333333,
+            "min": 2822.0,
+            "n": 30,
+            "sd": 175.59111660299064
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.9992620355833972,
+            "ci95_high": 66.7532595634702,
+            "ci95_low": 64.7547354923034,
+            "ci95_method": "two-sided Student-t",
+            "max": 69.62374524056767,
+            "mean": 65.7539975278868,
+            "min": 57.87732132808104,
+            "n": 30,
+            "sd": 2.676072879409422
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 135438.0,
+            "ci95_low": 135438.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 135438.0,
+            "mean": 135438.0,
+            "min": 135438.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.4789008129462373,
+            "ci95_high": 51.9041138255424,
+            "ci95_low": 48.94631219964993,
+            "ci95_method": "two-sided Student-t",
+            "max": 59.72179152084348,
+            "mean": 50.42521301259617,
+            "min": 43.20500893397717,
+            "n": 30,
+            "sd": 3.9605691159390313
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "25": {
+          "auctions_won": {
+            "ci95_halfwidth": 57.931810429300896,
+            "ci95_high": 23295.2318104293,
+            "ci95_low": 23179.368189570698,
+            "ci95_method": "two-sided Student-t",
+            "max": 23677.0,
+            "mean": 23237.3,
+            "min": 22996.0,
+            "n": 30,
+            "sd": 155.14423767178278
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.05142292586446266,
+            "ci95_high": 84.33886861518938,
+            "ci95_low": 84.23602276346047,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.57357499569486,
+            "mean": 84.28744568932493,
+            "min": 83.91081151153746,
+            "n": 30,
+            "sd": 0.13771312467147656
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 135438.0,
+            "ci95_low": 135438.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 135438.0,
+            "mean": 135438.0,
+            "min": 135438.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 3.7169636156932766,
+            "ci95_high": 1349.8493636806677,
+            "ci95_low": 1342.4154364492813,
+            "ci95_method": "two-sided Student-t",
+            "max": 1371.4932293743261,
+            "mean": 1346.1324000649745,
+            "min": 1332.171177955965,
+            "n": 30,
+            "sd": 9.954211379501778
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "5": {
+          "auctions_won": {
+            "ci95_halfwidth": 30.094220248513643,
+            "ci95_high": 4689.627553581848,
+            "ci95_low": 4629.43911308482,
+            "ci95_method": "two-sided Student-t",
+            "max": 4832.0,
+            "mean": 4659.533333333334,
+            "min": 4542.0,
+            "n": 30,
+            "sd": 80.59380199209012
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.12178723945559052,
+            "ci95_high": 84.39921260054052,
+            "ci95_low": 84.15563812162935,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.8876111954871,
+            "mean": 84.27742536108494,
+            "min": 83.3475520067241,
+            "n": 30,
+            "sd": 0.3261522172960074
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 135438.0,
+            "ci95_low": 135438.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 135438.0,
+            "mean": 135438.0,
+            "min": 135438.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.8069595472525246,
+            "ci95_high": 191.7453077213248,
+            "ci95_low": 188.13138862681976,
+            "ci95_method": "two-sided Student-t",
+            "max": 201.49219569101732,
+            "mean": 189.93834817407227,
+            "min": 182.86300742775293,
+            "n": 30,
+            "sd": 4.839126541787687
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "50": {
+          "auctions_won": {
+            "ci95_halfwidth": 67.77150940528604,
+            "ci95_high": 31040.17150940529,
+            "ci95_low": 30904.628490594714,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30972.4,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 181.49543548929344
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.04387467236894821,
+            "ci95_high": 75.96157814008623,
+            "ci95_low": 75.87382879534835,
+            "ci95_method": "two-sided Student-t",
+            "max": 76.158317655687,
+            "mean": 75.91770346771729,
+            "min": 75.66643338847182,
+            "n": 30,
+            "sd": 0.11749853055406827
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 135438.0,
+            "ci95_low": 135438.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 135438.0,
+            "mean": 135438.0,
+            "min": 135438.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 3.874251500639568,
+            "ci95_high": 1673.1817329066457,
+            "ci95_low": 1665.4332299053667,
+            "ci95_method": "two-sided Student-t",
+            "max": 1696.7977967778615,
+            "mean": 1669.3074814060062,
+            "min": 1654.1701738064648,
+            "n": 30,
+            "sd": 10.375436071500307
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.11387249572616417,
+            "ci95_high": 33.31154720051113,
+            "ci95_low": 33.0838022090588,
+            "ci95_method": "two-sided Student-t",
+            "max": 33.33333333333333,
+            "mean": 33.197674704784966,
+            "min": 32.267901179875665,
+            "n": 30,
+            "sd": 0.3049561443065759
+          }
+        }
+      },
+      "5": {
+        "0": {
+          "auctions_won": {
+            "ci95_halfwidth": 68.4293113531742,
+            "ci95_high": 31038.86264468651,
+            "ci95_low": 30902.00402198016,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30970.433333333334,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 183.2570614593409
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.22720027638839577,
+            "ci95_high": 13.49371009113887,
+            "ci95_low": 13.039309538362078,
+            "ci95_method": "two-sided Student-t",
+            "max": 14.121547672696838,
+            "mean": 13.266509814750474,
+            "min": 11.835965899951745,
+            "n": 30,
+            "sd": 0.6084535148804494
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 541752.0,
+            "ci95_low": 541752.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 541752.0,
+            "mean": 541752.0,
+            "min": 541752.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.002878852534400011,
+            "ci95_high": 0.017535005165124032,
+            "ci95_low": 0.01177730009632401,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.03156425818455677,
+            "mean": 0.014656152630724022,
+            "min": 0.0025842082724198525,
+            "n": 30,
+            "sd": 0.007709708681796488
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 1.2724445286328296,
+            "ci95_high": 25.450789355540095,
+            "ci95_low": 22.90590029827444,
+            "ci95_method": "two-sided Student-t",
+            "max": 32.09531298453905,
+            "mean": 24.178344826907267,
+            "min": 19.048014589701562,
+            "n": 30,
+            "sd": 3.4076690321164826
+          }
+        },
+        "1": {
+          "auctions_won": {
+            "ci95_halfwidth": 68.01116132251153,
+            "ci95_high": 31039.61116132251,
+            "ci95_low": 30903.588838677486,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30971.6,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 182.1372351107623
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.22935492417960487,
+            "ci95_high": 13.536433381138034,
+            "ci95_low": 13.077723532778824,
+            "ci95_method": "two-sided Student-t",
+            "max": 14.209457284491084,
+            "mean": 13.307078456958429,
+            "min": 11.84542383786392,
+            "n": 30,
+            "sd": 0.6142237676403952
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 541752.0,
+            "ci95_low": 541752.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 541752.0,
+            "mean": 541752.0,
+            "min": 541752.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.11950954210604571,
+            "ci95_high": 0.4940166966712342,
+            "ci95_low": 0.2549976124591428,
+            "ci95_method": "two-sided Student-t",
+            "max": 1.1833828024631197,
+            "mean": 0.3745071545651885,
+            "min": 0.007014279596568172,
+            "n": 30,
+            "sd": 0.3200524317667183
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 1.2425653552570404,
+            "ci95_high": 25.54615814310092,
+            "ci95_low": 23.061027432586844,
+            "ci95_method": "two-sided Student-t",
+            "max": 32.09900471064251,
+            "mean": 24.303592787843883,
+            "min": 19.355719960424697,
+            "n": 30,
+            "sd": 3.327651136226502
+          }
+        },
+        "10": {
+          "auctions_won": {
+            "ci95_halfwidth": 123.19646529960976,
+            "ci95_high": 9743.69646529961,
+            "ci95_low": 9497.30353470039,
+            "ci95_method": "two-sided Student-t",
+            "max": 10350.0,
+            "mean": 9620.5,
+            "min": 9170.0,
+            "n": 30,
+            "sd": 329.9261934182375
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.6411396906877074,
+            "ci95_high": 83.09427879126301,
+            "ci95_low": 81.81199940988759,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.42722547108512,
+            "mean": 82.4531391005753,
+            "min": 78.20391807658059,
+            "n": 30,
+            "sd": 1.7170036257412944
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 541752.0,
+            "ci95_low": 541752.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 541752.0,
+            "mean": 541752.0,
+            "min": 541752.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 1.089025221730328,
+            "ci95_high": 47.425343930905996,
+            "ci95_low": 45.24729348744533,
+            "ci95_method": "two-sided Student-t",
+            "max": 53.16953144612295,
+            "mean": 46.336318709175664,
+            "min": 41.17917423470518,
+            "n": 30,
+            "sd": 2.916463106860561
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "2": {
+          "auctions_won": {
+            "ci95_halfwidth": 67.77150940528604,
+            "ci95_high": 31040.17150940529,
+            "ci95_low": 30904.628490594714,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30972.4,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 181.49543548929344
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.06445276515512294,
+            "ci95_high": 13.4390011531344,
+            "ci95_low": 13.310095622824155,
+            "ci95_method": "two-sided Student-t",
+            "max": 13.66861875950432,
+            "mean": 13.374548387979278,
+            "min": 13.022612098274424,
+            "n": 30,
+            "sd": 0.1726076751568674
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 541752.0,
+            "ci95_low": 541752.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 541752.0,
+            "mean": 541752.0,
+            "min": 541752.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.3640480197088739,
+            "ci95_high": 23.902075259725216,
+            "ci95_low": 23.173979220307466,
+            "ci95_method": "two-sided Student-t",
+            "max": 25.589753245027246,
+            "mean": 23.53802724001634,
+            "min": 22.02040786189991,
+            "n": 30,
+            "sd": 0.9749385022686745
+          }
+        },
+        "25": {
+          "auctions_won": {
+            "ci95_halfwidth": 58.416620343762865,
+            "ci95_high": 23302.249953677096,
+            "ci95_low": 23185.41671298957,
+            "ci95_method": "two-sided Student-t",
+            "max": 23692.0,
+            "mean": 23243.833333333332,
+            "min": 22998.0,
+            "n": 30,
+            "sd": 156.4425824678032
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.05103814181465026,
+            "ci95_high": 84.34322461840986,
+            "ci95_low": 84.24114833478058,
+            "ci95_method": "two-sided Student-t",
+            "max": 84.57781699233881,
+            "mean": 84.29218647659522,
+            "min": 83.92114354810847,
+            "n": 30,
+            "sd": 0.13668265406070115
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 541752.0,
+            "ci95_low": 541752.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 541752.0,
+            "mean": 541752.0,
+            "min": 541752.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.9358713575838126,
+            "ci95_high": 262.5909521571625,
+            "ci95_low": 260.71920944199485,
+            "ci95_method": "two-sided Student-t",
+            "max": 268.15295559591846,
+            "mean": 261.6550807995787,
+            "min": 258.1732970067485,
+            "n": 30,
+            "sd": 2.50630952589322
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 0.0,
+            "ci95_low": 0.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 0.0,
+            "mean": 0.0,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.0
+          }
+        },
+        "5": {
+          "auctions_won": {
+            "ci95_halfwidth": 407.80009059169566,
+            "ci95_high": 16274.833423925029,
+            "ci95_low": 15459.233242741637,
+            "ci95_method": "two-sided Student-t",
+            "max": 18360.0,
+            "mean": 15867.033333333333,
+            "min": 14100.0,
+            "n": 30,
+            "sd": 1092.1087000128139
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 1.102103994434728,
+            "ci95_high": 44.65764151305378,
+            "ci95_low": 42.45343352418433,
+            "ci95_method": "two-sided Student-t",
+            "max": 49.25148936170213,
+            "mean": 43.555537518619055,
+            "min": 37.42979302832244,
+            "n": 30,
+            "sd": 2.9514887034347077
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 541752.0,
+            "ci95_low": 541752.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 541752.0,
+            "mean": 541752.0,
+            "min": 541752.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.7023840833187021,
+            "ci95_high": 27.914675562322625,
+            "ci95_low": 26.50990739568522,
+            "ci95_method": "two-sided Student-t",
+            "max": 30.546449297833693,
+            "mean": 27.212291479003923,
+            "min": 22.281228311109142,
+            "n": 30,
+            "sd": 1.8810191214766254
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.11158159891797828,
+            "ci95_high": 0.3143004321356375,
+            "ci95_low": 0.09113723429968096,
+            "ci95_method": "two-sided Student-t",
+            "max": 1.0595253916921394,
+            "mean": 0.20271883321765924,
+            "min": 0.0,
+            "n": 30,
+            "sd": 0.29882100997783834
+          }
+        },
+        "50": {
+          "auctions_won": {
+            "ci95_halfwidth": 67.77150940528604,
+            "ci95_high": 31040.17150940529,
+            "ci95_low": 30904.628490594714,
+            "ci95_method": "two-sided Student-t",
+            "max": 31436.0,
+            "mean": 30972.4,
+            "min": 30723.0,
+            "n": 30,
+            "sd": 181.49543548929344
+          },
+          "avg_clearing_score_units": {
+            "ci95_halfwidth": 0.04365765343305753,
+            "ci95_high": 75.96315780319873,
+            "ci95_low": 75.87584249633261,
+            "ci95_method": "two-sided Student-t",
+            "max": 76.16192085711553,
+            "mean": 75.91950014976567,
+            "min": 75.67215930779997,
+            "n": 30,
+            "sd": 0.11691734316980396
+          },
+          "budget_score_units": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 541752.0,
+            "ci95_low": 541752.0,
+            "ci95_method": "two-sided Student-t",
+            "max": 541752.0,
+            "mean": 541752.0,
+            "min": 541752.0,
+            "n": 30,
+            "sd": 0.0
+          },
+          "overspend_pct": {
+            "ci95_halfwidth": 0.9728863020737106,
+            "ci95_high": 368.3440019909252,
+            "ci95_low": 366.39822938677776,
+            "ci95_method": "two-sided Student-t",
+            "max": 374.2203074469499,
+            "mean": 367.3711156888515,
+            "min": 363.5425434516162,
+            "n": 30,
+            "sd": 2.6054373677955
+          },
+          "underspend_pct": {
+            "ci95_halfwidth": 0.0,
+            "ci95_high": 33.33333333333333,
+            "ci95_low": 33.33333333333333,
+            "ci95_method": "two-sided Student-t",
+            "max": 33.33333333333333,
+            "mean": 33.33333333333333,
+            "min": 33.33333333333333,
+            "n": 30,
+            "sd": 0.0
+          }
+        }
+      }
+    },
+    "estimand": "pool overspend percent",
+    "pressure_20_primary_replication": {
+      "max_absolute_overspend_difference": 0.0,
+      "rows_compared": 210,
+      "status": "exact match"
+    }
+  },
+  "protocol": {
+    "accounting": {
+      "currency_semantics": "none",
+      "debit_rule": "round the auction's floating score output once to the nearest integer, with half values rounded away from zero by Rust f64::round",
+      "legacy_internal_identifiers": "the shared simulator retains *_cents Rust field names for compatibility with earlier deposited rows; this artifact's public schema uses score-unit names",
+      "transfer_scope": "overspend mechanisms are evaluated only at this chosen score granularity; guard and small-lag rounding results are not claimed to transfer to a currency ledger",
+      "unit": "dimensionless integer score unit"
+    },
+    "budget_derivation": "same frozen mean unconstrained vertical score-unit debit from primary pilot rows, divided by campaigns in vertical and pressure target, rounded per campaign, then frozen before evaluation",
+    "device_assignment": "each tick, each device independently draws Poisson(arrivals_per_tick / n_devices) arrivals; every arrival independently samples one context uniformly",
+    "evaluation_seeds": [
+      20260527,
+      20260528,
+      20260529,
+      20260530,
+      20260531,
+      20260532,
+      20260533,
+      20260534,
+      20260535,
+      20260536,
+      20260537,
+      20260538,
+      20260539,
+      20260540,
+      20260541,
+      20260542,
+      20260543,
+      20260544,
+      20260545,
+      20260546,
+      20260547,
+      20260548,
+      20260549,
+      20260550,
+      20260551,
+      20260552,
+      20260553,
+      20260554,
+      20260555,
+      20260556
+    ],
+    "pilot_evaluation_disjoint": true,
+    "pilot_seed_end": 30260556,
+    "pilot_seed_start": 30260527,
+    "pressure_targets": [
+      2.0,
+      5.0,
+      10.0,
+      20.0
+    ],
+    "sync_intervals": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      25,
+      50
+    ]
+  },
+  "visible_balance_guard": {
+    "cells": {
+      "0": {
+        "auctions_won": {
+          "ci95_halfwidth": 518.5437333795738,
+          "ci95_high": 20935.51040004624,
+          "ci95_low": 19898.422933287093,
+          "ci95_method": "two-sided Student-t",
+          "max": 23294.0,
+          "mean": 20416.966666666667,
+          "min": 17711.0,
+          "n": 30,
+          "sd": 1388.6856222598635
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 0.17366744544509552,
+          "ci95_high": 6.7938299619011815,
+          "ci95_low": 6.44649507101099,
+          "ci95_method": "two-sided Student-t",
+          "max": 7.617525831404212,
+          "mean": 6.6201625164560856,
+          "min": 5.7849660856873015,
+          "n": 30,
+          "sd": 0.46508996063340213
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 0.0,
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "two-sided Student-t",
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.0
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.1514459431589728,
+          "ci95_high": 0.812092635126269,
+          "ci95_low": 0.5092007488083234,
+          "ci95_method": "two-sided Student-t",
+          "max": 1.6059008550037654,
+          "mean": 0.6606466919672962,
+          "min": 0.17941788862800692,
+          "n": 30,
+          "sd": 0.40557968455960997
+        }
+      },
+      "1": {
+        "auctions_won": {
+          "ci95_halfwidth": 592.7075688123081,
+          "ci95_high": 20593.94090214564,
+          "ci95_low": 19408.525764521026,
+          "ci95_method": "two-sided Student-t",
+          "max": 22932.0,
+          "mean": 20001.233333333334,
+          "min": 17219.0,
+          "n": 30,
+          "sd": 1587.3000212534694
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 0.2604232019720419,
+          "ci95_high": 7.847542759328531,
+          "ci95_low": 7.326696355384447,
+          "ci95_method": "two-sided Student-t",
+          "max": 8.748940124281317,
+          "mean": 7.587119557356489,
+          "min": 6.113200804109895,
+          "n": 30,
+          "sd": 0.6974261436435609
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 1.1969188093827947,
+          "ci95_high": 13.079083834461919,
+          "ci95_low": 10.685246215696331,
+          "ci95_method": "two-sided Student-t",
+          "max": 17.095645239888363,
+          "mean": 11.882165025079125,
+          "min": 1.5180377737414905,
+          "n": 30,
+          "sd": 3.2054074412766886
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.1688188072077184,
+          "ci95_high": 0.7580429048268011,
+          "ci95_low": 0.4204052904113644,
+          "ci95_method": "two-sided Student-t",
+          "max": 1.5453565469070718,
+          "mean": 0.5892240976190828,
+          "min": 0.09081646214504054,
+          "n": 30,
+          "sd": 0.45210506895627856
+        }
+      },
+      "10": {
+        "auctions_won": {
+          "ci95_halfwidth": 38.65163724139783,
+          "ci95_high": 9339.051637241397,
+          "ci95_low": 9261.748362758603,
+          "ci95_method": "two-sided Student-t",
+          "max": 9519.0,
+          "mean": 9300.4,
+          "min": 9126.0,
+          "n": 30,
+          "sd": 103.51098559056925
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 0.08651286293194262,
+          "ci95_high": 84.44407996324655,
+          "ci95_low": 84.27105423738267,
+          "ci95_method": "two-sided Student-t",
+          "max": 84.76729222520107,
+          "mean": 84.35756710031461,
+          "min": 83.98582333696838,
+          "n": 30,
+          "sd": 0.23168570201615987
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 2.534323219938398,
+          "ci95_high": 481.81148324888153,
+          "ci95_low": 476.7428368090047,
+          "ci95_method": "two-sided Student-t",
+          "max": 495.2627770640441,
+          "mean": 479.2771600289431,
+          "min": 465.9763138853203,
+          "n": 30,
+          "sd": 6.787042232196047
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.0,
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "two-sided Student-t",
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.0
+        }
+      },
+      "2": {
+        "auctions_won": {
+          "ci95_halfwidth": 64.35827768652545,
+          "ci95_high": 3114.891611019859,
+          "ci95_low": 2986.175055646808,
+          "ci95_method": "two-sided Student-t",
+          "max": 3504.0,
+          "mean": 3050.5333333333333,
+          "min": 2783.0,
+          "n": 30,
+          "sd": 172.35463306865262
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 1.0208359494925328,
+          "ci95_high": 66.09986723137384,
+          "ci95_low": 64.05819533238876,
+          "ci95_method": "two-sided Student-t",
+          "max": 69.55844606312868,
+          "mean": 65.0790312818813,
+          "min": 57.261986301369866,
+          "n": 30,
+          "sd": 2.733848881958388
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 1.5043381446135016,
+          "ci95_high": 47.85792182619966,
+          "ci95_low": 44.84924553697266,
+          "ci95_method": "two-sided Student-t",
+          "max": 53.43330527621495,
+          "mean": 46.35358368158616,
+          "min": 37.953159379199334,
+          "n": 30,
+          "sd": 4.028691541264202
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.01757687476020905,
+          "ci95_high": 0.08548002355646023,
+          "ci95_low": 0.05032627403604212,
+          "ci95_method": "two-sided Student-t",
+          "max": 0.17351112686247583,
+          "mean": 0.06790314879625117,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.04707173511611487
+        }
+      },
+      "25": {
+        "auctions_won": {
+          "ci95_halfwidth": 57.68560641063191,
+          "ci95_high": 23288.418939743966,
+          "ci95_low": 23173.0477269227,
+          "ci95_method": "two-sided Student-t",
+          "max": 23669.0,
+          "mean": 23230.733333333334,
+          "min": 22991.0,
+          "n": 30,
+          "sd": 154.48489120038698
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 0.05158217912368164,
+          "ci95_high": 84.33430346016942,
+          "ci95_low": 84.23113910192205,
+          "ci95_method": "two-sided Student-t",
+          "max": 84.57145317545748,
+          "mean": 84.28272128104574,
+          "min": 83.90416288419142,
+          "n": 30,
+          "sd": 0.13813961273244313
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 3.702707928593875,
+          "ci95_high": 1349.3454128316982,
+          "ci95_low": 1341.9399969745107,
+          "ci95_method": "two-sided Student-t",
+          "max": 1370.8966464360076,
+          "mean": 1345.6427049031045,
+          "min": 1331.798313619516,
+          "n": 30,
+          "sd": 9.916033948291972
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.0,
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "two-sided Student-t",
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.0
+        }
+      },
+      "5": {
+        "auctions_won": {
+          "ci95_halfwidth": 30.094220248513643,
+          "ci95_high": 4689.627553581848,
+          "ci95_low": 4629.43911308482,
+          "ci95_method": "two-sided Student-t",
+          "max": 4832.0,
+          "mean": 4659.533333333334,
+          "min": 4542.0,
+          "n": 30,
+          "sd": 80.59380199209012
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 0.12178723945559052,
+          "ci95_high": 84.39921260054052,
+          "ci95_low": 84.15563812162935,
+          "ci95_method": "two-sided Student-t",
+          "max": 84.8876111954871,
+          "mean": 84.27742536108494,
+          "min": 83.3475520067241,
+          "n": 30,
+          "sd": 0.3261522172960074
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 1.8069595472525246,
+          "ci95_high": 191.7453077213248,
+          "ci95_low": 188.13138862681976,
+          "ci95_method": "two-sided Student-t",
+          "max": 201.49219569101732,
+          "mean": 189.93834817407227,
+          "min": 182.86300742775293,
+          "n": 30,
+          "sd": 4.839126541787687
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.0,
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "two-sided Student-t",
+          "max": 0.0,
+          "mean": 0.0,
+          "min": 0.0,
+          "n": 30,
+          "sd": 0.0
+        }
+      },
+      "50": {
+        "auctions_won": {
+          "ci95_halfwidth": 68.99789523642791,
+          "ci95_high": 31028.39789523643,
+          "ci95_low": 30890.402104763572,
+          "ci95_method": "two-sided Student-t",
+          "max": 31424.0,
+          "mean": 30959.4,
+          "min": 30720.0,
+          "n": 30,
+          "sd": 184.7797570641591
+        },
+        "avg_clearing_score_units": {
+          "ci95_halfwidth": 0.043403906279275095,
+          "ci95_high": 75.96016567506977,
+          "ci95_low": 75.87335786251121,
+          "ci95_method": "two-sided Student-t",
+          "max": 76.16112776679212,
+          "mean": 75.9167617687905,
+          "min": 75.66586048879837,
+          "n": 30,
+          "sd": 0.11623779581156968
+        },
+        "overspend_pct": {
+          "ci95_halfwidth": 3.943121962151646,
+          "ci95_high": 1672.636054029469,
+          "ci95_low": 1664.7498101051656,
+          "ci95_method": "two-sided Student-t",
+          "max": 1696.4692331546537,
+          "mean": 1668.6929320673173,
+          "min": 1654.0276731788715,
+          "n": 30,
+          "sd": 10.559874554782903
+        },
+        "underspend_pct": {
+          "ci95_halfwidth": 0.0,
+          "ci95_high": 33.33333333333333,
+          "ci95_low": 33.33333333333333,
+          "ci95_method": "two-sided Student-t",
+          "max": 33.33333333333333,
+          "mean": 33.33333333333333,
+          "min": 33.33333333333333,
+          "n": 30,
+          "sd": 0.0
+        }
+      }
+    },
+    "estimand": "pool overspend percent",
+    "paired_guard_minus_standard_overspend_pp": {
+      "0": {
+        "ci95_halfwidth": 0.03465547185272565,
+        "ci95_high": -0.49299063436069546,
+        "ci95_low": -0.5623015780661468,
+        "ci95_method": "two-sided Student-t",
+        "max": -0.3536673607111741,
+        "mean": -0.5276461062134211,
+        "min": -0.7302234232637812,
+        "n": 30,
+        "sd": 0.09280905813065454
+      },
+      "1": {
+        "ci95_halfwidth": 0.672558764312509,
+        "ci95_high": -5.218328578973718,
+        "ci95_low": -6.563446107598736,
+        "ci95_method": "two-sided Student-t",
+        "max": -3.3203384574491643,
+        "mean": -5.890887343286227,
+        "min": -11.648134201627315,
+        "n": 30,
+        "sd": 1.80114545023722
+      },
+      "10": {
+        "ci95_halfwidth": 0.0,
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "ci95_method": "two-sided Student-t",
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0,
+        "n": 30,
+        "sd": 0.0
+      },
+      "2": {
+        "ci95_halfwidth": 0.7695254383767013,
+        "ci95_high": -3.3021038926333053,
+        "ci95_low": -4.841154769386708,
+        "ci95_method": "two-sided Student-t",
+        "max": 1.29653420753408,
+        "mean": -4.071629331010007,
+        "min": -7.69355719960425,
+        "n": 30,
+        "sd": 2.060826972630113
+      },
+      "25": {
+        "ci95_halfwidth": 0.056965643293063854,
+        "ci95_high": -0.43272951857683106,
+        "ci95_low": -0.5466608051629588,
+        "ci95_method": "two-sided Student-t",
+        "max": -0.22371860186945014,
+        "mean": -0.4896951618698949,
+        "min": -0.7457286728983945,
+        "n": 30,
+        "sd": 0.1525567945605761
+      },
+      "5": {
+        "ci95_halfwidth": 0.0,
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "ci95_method": "two-sided Student-t",
+        "max": 0.0,
+        "mean": 0.0,
+        "min": 0.0,
+        "n": 30,
+        "sd": 0.0
+      },
+      "50": {
+        "ci95_halfwidth": 0.4852823057576035,
+        "ci95_high": -0.1292670329312085,
+        "ci95_low": -1.0998316444464156,
+        "ci95_method": "two-sided Student-t",
+        "max": -0.06423603420012114,
+        "mean": -0.614549338688812,
+        "min": -7.343581564996384,
+        "n": 30,
+        "sd": 1.2996098831444194
+      }
+    },
+    "zero_lag_exact": true,
+    "zero_lag_replicates_with_excess_debit": 0
+  }
+}

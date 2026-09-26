@@ -1,0 +1,111 @@
+{
+  "aggregate_budget_cents": 135438,
+  "aggregate_budget_cents_critical_bid_rule": 157161,
+  "arrivals_per_tick": 3000,
+  "bid_distribution": {
+    "cents": 100,
+    "kind": "fixed"
+  },
+  "budget_calibration": {
+    "budget_vectors_frozen_before_evaluation": true,
+    "evaluation_seed_end": 20260556,
+    "evaluation_seed_start": 20260527,
+    "factorial_budget_vector_shared_across_payment_and_reserve": true,
+    "inventory_scale_reason": "300000 expected auctions makes every primary campaign budget exceed the separately audited 500-cent floor with margin in both value arms",
+    "legacy_floor_cents": 500,
+    "legacy_floor_used_in_primary": false,
+    "pilot_evaluation_disjoint": true,
+    "pilot_replicates": 30,
+    "pilot_seed_end": 30260556,
+    "pilot_seed_start": 30260527,
+    "policy": "mean_pilot_vertical_spend_divided_by_target_pressure_then_frozen",
+    "target_oversubscription": 20.0
+  },
+  "command": [
+    "harness/target/release/lmads-sim",
+    "--mode",
+    "pacing",
+    "--opportunities",
+    "data/opportunities_teacher_50k.jsonl",
+    "--out",
+    "results/track_b_smoke",
+    "--seed",
+    "20260527",
+    "--oversubscription",
+    "20",
+    "--replicates",
+    "30",
+    "--pilot-replicates",
+    "30",
+    "--bid-dist",
+    "fixed:100"
+  ],
+  "contexts_path": "data/opportunities_teacher_50k.jsonl",
+  "eligible_pair_fraction": 0.008602647876974755,
+  "expected_auctions_per_run": 300000,
+  "generator": {
+    "arguments": {
+      "bid_distribution": {
+        "cents": 100,
+        "kind": "fixed"
+      },
+      "mode": "pacing",
+      "opportunities": "data/opportunities_teacher_50k.jsonl",
+      "out": "results/track_b_smoke",
+      "oversubscription": 20.0,
+      "pilot_replicates": 30,
+      "replicates": 30,
+      "seed": 20260527
+    },
+    "binary": "harness/target/release/lmads-sim",
+    "required_rustup_toolchain": "stable"
+  },
+  "input_sha256": {
+    "data/opportunities_teacher_50k.jsonl": "16ad2a17e55bb2185bfe4633521c70c9c03962131bc430358cc13df018ecbbf8"
+  },
+  "mode": "pacing",
+  "n_campaigns": 36,
+  "n_contexts": 50808,
+  "n_devices": 50,
+  "oversubscription": 20.0,
+  "payment_rule": "second_score",
+  "provenance": {
+    "cargo": "cargo 1.97.1",
+    "code_sha256": "5ab5605fb98afbe7641feed0ed98605ca5863cff4e0be0755fb1da5d847cca75",
+    "hashed_files": [
+      "paper/harness/src/auction_port.rs",
+      "paper/harness/src/campaigns.rs",
+      "paper/harness/src/main.rs",
+      "paper/harness/src/model.rs",
+      "paper/harness/src/pacing_sim.rs",
+      "lmads/packages/sdk/src/auction.ts",
+      "lmads/crates/lmads-distribution/src/pacing.rs"
+    ],
+    "node": "v25.2.1",
+    "rustc": "rustc 1.97.1",
+    "schema_version": 2,
+    "toolchain_sha256": "c11f064d338656e77cd64137c970c60d8c0f6f838a89cd3592f8152185fa1dfe",
+    "version_control_ids_omitted_for_anonymity": true
+  },
+  "replicates": 30,
+  "schema_version": 2,
+  "seed": 20260527,
+  "source_state": {
+    "bytes": 628972,
+    "includes_evaluation_input": true,
+    "layout": "paper/ and lmads/ are sibling source roots; run Cargo from paper/harness",
+    "path": "source_snapshot.tar.gz",
+    "reconstructible_from_recorded_state": true,
+    "sha256": "dabe08d17b18aa6ba8816b99b4ed164dc866c3de12b9eee3439e55d5da72a2a4",
+    "version_control_ids_omitted_for_anonymity": true
+  },
+  "sync_intervals": [
+    1,
+    2,
+    5,
+    10,
+    25,
+    50
+  ],
+  "ticks": 100
+}

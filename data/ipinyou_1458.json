@@ -1,0 +1,16 @@
+{
+  "source": "iPinYou campaign 1458, Zhang et al. 2014, arXiv:1407.7073, Table 3",
+  "economic_interpretation": "calibrated-synthetic value proxy; market price is not advertiser private value",
+  "unit_mapping": "1 published Chinese-fen-per-CPM numerical unit -> 1 simulator cent",
+  "campaign": 1458,
+  "bid_requests": 14701496,
+  "impressions": 3083056,
+  "win_rate": 0.2097,
+  "mean_market_price_fen_per_cpm": 68.89,
+  "distribution": {
+    "kind": "log-normal",
+    "mu": 3.8712610296051047,
+    "sigma": 0.85,
+    "expected_mean": 68.89000000000001
+  }
+}
