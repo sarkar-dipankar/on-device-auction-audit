@@ -2,6 +2,9 @@
 
 Reproducibility artifact for **When Privacy Moves ML-Mediated Decisions On Device: Information and Incentive Misalignment in Auctions**, by **Dipankar Sarkar** (Skelf Research), previously submitted to EconML at NeurIPS 2026.
 
+- Paper: https://arxiv.org/abs/2609.33312
+- Dataset on Hugging Face: https://huggingface.co/datasets/skelfresearch/on-device-auction-audit
+
 This is a curated release of the recorded experiment artifacts. It contains the primary and iPinYou-parameterized runs, controller comparisons, pressure/visible-balance experiments, and bursty/heterogeneous robustness sweep. Accounting uses dimensionless integer score units. Legacy `*_cents` identifiers in recorded artifacts do not confer currency semantics.
 
 ## Contents
@@ -40,3 +43,16 @@ The generators validate their input invariants before writing JSON summaries und
 The context labels derive from WildChat-1M (Zhao et al., ICLR 2024), via the single `gpt-oss:120b` teacher described in the paper. They inherit **CC BY-NC 4.0** and require attribution to WildChat and this derivative. The labels are not human ground truth. No original conversation text is redistributed here. See the original WildChat paper and dataset documentation for collection and consent details.
 
 Code in this repository is MIT (see `LICENSE`); WildChat-derived data are excluded from that code license and remain CC BY-NC 4.0. The paper's arXiv license does not replace the data terms.
+
+## Citation
+
+```bibtex
+@misc{sarkar2026ondevice,
+  title = {When Privacy Moves ML-Mediated Decisions On Device: Information and Incentive Misalignment in Auctions},
+  author = {Dipankar Sarkar},
+  year = {2026},
+  eprint = {2609.33312},
+  archivePrefix = {arXiv},
+  url = {https://arxiv.org/abs/2609.33312}
+}
+```
